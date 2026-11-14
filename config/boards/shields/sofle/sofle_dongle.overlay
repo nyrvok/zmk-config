@@ -5,6 +5,7 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &physical_layout0;
+    };
 
     left_encoder: encoder_left {
         compatible = "alps,ec11";
@@ -23,7 +24,6 @@
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <20>;
     };
-
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
